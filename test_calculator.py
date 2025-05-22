@@ -1,4 +1,5 @@
 import unittest
+import math
 from calculator import add, subtract, multiply, divide, power, sqrt
 from calculator import sin, cos, tan, log10, ln, abs_val, factorial, sci_notation
 
@@ -36,5 +37,4 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(sci_notation(1234), "1.23e+03")
         
 if __name__ == "__main__":
-    import math  # 导入 math 模块用于测试
     unittest.main() 
